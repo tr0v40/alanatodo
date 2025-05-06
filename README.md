@@ -55,6 +55,7 @@ todoapp/
 ### Links úteis
 - [Markdown](https://www.markdownguide.org/cheat-sheet/)
 - [Documentação Kotlin](https://kotlinlang.org/docs/home.html)
+- [Exemplo Master] (https://habitica.com/static/home)
 
 
 ### Exemplos de Apoio
