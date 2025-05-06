@@ -1,5 +1,6 @@
 # TODO - Teste da Alana
 Criar um app de TODO Android modular, com persistência local com Room, e UI com Jetpack Compose.
+Utilizar arquitetura Clean Arquiteture e MVVM. Realizar uma pesquisa sobre ambas
 
 ## Funcionalidades mínimas
 - Adicionar, listar, editar e remover tarefas.
