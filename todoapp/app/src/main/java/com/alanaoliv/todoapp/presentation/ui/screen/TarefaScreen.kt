@@ -11,10 +11,14 @@ import com.alanaoliv.todoapp.domain.model.Tarefa
 import com.alanaoliv.todoapp.presentation.viewmodel.TarefaViewModel
 
 @Composable
-fun TarefaScreen(viewModel: TarefaViewModel) {
+fun TarefaScreen(viewModel: TarefaViewModel = hiltViewModel()) {
     val tarefas by viewModel.tarefas.collectAsState()
     var titulo by remember { mutableStateOf("") }
     var descricao by remember { mutableStateOf("") }
+
+    LaunchedEffect(Unit) {
+        viewModel.carregarTarefas()
+    }
 
     Column(modifier = Modifier.padding(16.dp)) {
 
