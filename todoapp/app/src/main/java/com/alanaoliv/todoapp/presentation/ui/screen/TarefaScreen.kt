@@ -1,14 +1,14 @@
-package com.alanaoliv.todoapp.presentation.ui.screens
+package com.alanaoliv.todoapp.presentation.ui.screen
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.alanaoliv.todoapp.domain.model.Tarefa
 import com.alanaoliv.todoapp.presentation.viewmodel.TarefaViewModel
+import androidx.hilt.navigation.compose.hiltViewModel
+
 
 @Composable
 fun TarefaScreen(viewModel: TarefaViewModel = hiltViewModel()) {

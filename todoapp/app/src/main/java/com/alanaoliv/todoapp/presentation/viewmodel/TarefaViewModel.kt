@@ -9,11 +9,14 @@ import com.alanaoliv.todoapp.domain.usecase.AtualizarTarefaUseCase
 import com.alanaoliv.todoapp.domain.usecase.CriarTarefaUseCase
 import com.alanaoliv.todoapp.domain.usecase.DeletarTarefaUseCase
 import com.alanaoliv.todoapp.domain.usecase.ListarTodasTarefasUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class TarefaViewModel (
+@HiltViewModel
+class TarefaViewModel @Inject constructor(
     private val criarTarefa: CriarTarefaUseCase,
     private val listarTodasTarefas: ListarTodasTarefasUseCase,
     private val atualizarTarefa: AtualizarTarefaUseCase,

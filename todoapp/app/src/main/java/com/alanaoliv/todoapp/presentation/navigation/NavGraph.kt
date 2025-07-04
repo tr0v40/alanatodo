@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.alanaoliv.todoapp.presentation.ui.screens.TarefaScreen
+import com.alanaoliv.todoapp.presentation.ui.screen.TarefaScreen
 
 @Composable
 fun NavGraph(navController: NavHostController) {
